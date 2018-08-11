@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <Button
+       android:id="@+id/black_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignStart="@+id/yellow_button"
+       android:layout_alignTop="@+id/orange_button"
+       android:width="10dp"
+       android:background="@drawable/black_button" />
+
+   <Button
+       android:id="@+id/gray_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignStart="@+id/pink_button"
+       android:layout_alignTop="@+id/orange_button"
+       android:width="10dp"
+       android:background="@drawable/gray_button" />
+
+   <Button
+       android:id="@+id/brown_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignStart="@+id/red_button"
+       android:layout_alignTop="@+id/orange_button"
+       android:width="10dp"
+       android:background="@drawable/brown_button" />
+
+   <Button
+       android:id="@+id/purple_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignStart="@+id/green_button"
+       android:layout_alignTop="@+id/orange_button"
+       android:width="10dp"
+       android:background="@drawable/purple_button" />
+
+   <Button
+       android:id="@+id/orange_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentStart="true"
+       android:layout_marginBottom="61dp"
+       android:width="10dp"
+       android:background="@drawable/orange_button" />
+
+   <Button
+       android:id="@+id/yellow_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentEnd="true"
+       android:layout_below="@+id/my_custom_view"
+       android:layout_marginEnd="89dp"
+       android:width="10dp"
+       android:background="@drawable/yellow_button" />
+
+   <Button
+       android:id="@+id/pink_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentEnd="true"
+       android:layout_below="@+id/my_custom_view"
+       android:layout_marginEnd="152dp"
+       android:width="10dp"
+       android:background="@drawable/pink_button" />
+
+   <Button
+       android:id="@+id/red_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentStart="true"
+       android:layout_below="@+id/my_custom_view"
+       android:layout_marginStart="120dp"
+       android:width="10dp"
+       android:background="@drawable/red_button" />
+
+   <com.example.emmagoldberg.paintapp.customview.CustomView
+       android:layout_width="400dp"
+       android:layout_height="350dp"
+       android:id="@+id/my_custom_view"
+       />
+
+   <Button
+       android:id="@+id/green_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentStart="true"
+       android:layout_below="@+id/my_custom_view"
+       android:layout_marginStart="60dp"
+       android:width="10dp"
+       android:background="@drawable/green_button" />
+
+   <Button
+       android:id="@+id/blue_button"
+       android:layout_width="52dp"
+       android:layout_height="44dp"
+       android:layout_alignParentStart="true"
+       android:layout_below="@+id/my_custom_view"
+       android:width="10dp"
+       android:background="@drawable/blue_button"
+        />
+
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/paint_button"
+        android:text="CLEAR"
+        android:textColor="@color/Black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/erase_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="ERASE"
+        android:textSize="15dp" />
+
+   <TextView
+       android:id="@+id/current_color_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/yellow_button"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="31dp"
+       android:text="black"
+       android:textSize="18dp"
+       android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/pen_button"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/erase_button"
+        android:text="Pen"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/pencil_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/pen_button"
+        android:text="pencil"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/paint_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/pencil_button"
+        android:text="PAINT"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/current_tool_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/black_button"
+        android:layout_alignStart="@+id/clear_button"
+        android:text="pencil"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/black_button"
+        android:text="save" />
+
+
+</RelativeLayout>
